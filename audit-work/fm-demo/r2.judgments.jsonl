@@ -1,0 +1,4 @@
+{"queryId": "q1", "order": "boarA", "ok": true, "mapped": {"boar": {"correctness": 2, "completeness": 2, "usefulness": 2}, "ref": {"correctness": 5, "completeness": 5, "usefulness": 5}, "winner": "ref"}}
+{"queryId": "q1", "order": "boarB", "ok": true, "mapped": {"boar": {"correctness": 2, "completeness": 2, "usefulness": 2}, "ref": {"correctness": 5, "completeness": 5, "usefulness": 5}, "winner": "ref"}}
+{"queryId": "q2", "order": "boarA", "ok": true, "mapped": {"boar": {"correctness": 2, "completeness": 2, "usefulness": 2}, "ref": {"correctness": 5, "completeness": 5, "usefulness": 5}, "winner": "ref"}}
+{"queryId": "q2", "order": "boarB", "ok": true, "mapped": {"boar": {"correctness": 2, "completeness": 2, "usefulness": 2}, "ref": {"correctness": 5, "completeness": 5, "usefulness": 5}, "winner": "ref"}}

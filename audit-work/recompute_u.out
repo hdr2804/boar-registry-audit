@@ -1,0 +1,8 @@
+s42 opus: n=71 U=0.1668 | wins both-orders=0 any-order=0 mass-win(zeroed)=0 mass-win(raw)=0 | order-disagree=0 | refusedZ=5 ['cw-021', 'cw-022', 'cw-025', 'cx-021', 'cx-023']
+s42 codex: n=71 U=0.2440 | wins both-orders=0 any-order=1 mass-win(zeroed)=0 mass-win(raw)=0 | order-disagree=1 | refusedZ=5 ['cw-021', 'cw-022', 'cw-025', 'cx-021', 'cx-023']
+s43 opus: n=71 U=0.1623 | wins both-orders=0 any-order=0 mass-win(zeroed)=0 mass-win(raw)=0 | order-disagree=0 | refusedZ=5 ['cw-021', 'cw-022', 'cw-025', 'cx-021', 'cx-023']
+s43 codex: n=71 U=0.2409 | wins both-orders=0 any-order=0 mass-win(zeroed)=0 mass-win(raw)=0 | order-disagree=0 | refusedZ=5 ['cw-021', 'cw-022', 'cw-025', 'cx-021', 'cx-023']
+POOLED opus: official-style(A)=0.1645  either-seed-zero(B)=0.1645  mean-of-seeds(C)=0.1645  refused-in-exactly-one-seed=[]
+POOLED codex: official-style(A)=0.2424  either-seed-zero(B)=0.2424  mean-of-seeds(C)=0.2424  refused-in-exactly-one-seed=[]
+opus: mean |app mass s42-s43| = 0.225; items differing by >=1.0 mass: [('cw-001', 2.33, 1.0), ('cw-006', 0.0, 1.67)]
+codex: mean |app mass s42-s43| = 0.338; items differing by >=1.0 mass: [('cw-001', 3.0, 1.0), ('cw-006', 0.0, 2.0), ('cw-017', 0.33, 2.17), ('cw-029', 0.33, 1.67), ('cw-039', 0.33, 2.0), ('cx-010', 1.0, 0.0), ('cx-018', 2.0, 0.33)]

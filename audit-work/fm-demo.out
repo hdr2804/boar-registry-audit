@@ -1,0 +1,33 @@
+n judged = 2 of n planned = 3
+WARN not judged in every run (dropped): q3
+{
+ "runs": [
+  "r1",
+  "r2"
+ ],
+ "n_items": 2,
+ "bootstrap": "plain",
+ "decline_ratio_D": NaN,
+ "D_source": "measured on 0 declined answers",
+ "raw": {
+  "point": 0.4,
+  "ci95": [
+   0.4,
+   0.4
+  ]
+ },
+ "above_min": {
+  "point": 0.25,
+  "ci95": [
+   0.25,
+   0.25
+  ]
+ },
+ "above_decl": {
+  "point": NaN,
+  "ci95": [
+   NaN,
+   NaN
+  ]
+ }
+}
