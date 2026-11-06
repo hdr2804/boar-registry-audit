@@ -22,6 +22,24 @@ registry layer, not the final measurements. How to re-run every number:
 [Verification](#verification--re-run-every-headline-number-from-the-records-own-files)
 below.
 
+## Check the headline finding in 60 seconds
+
+The sharpest check in this audit needs nothing beyond the record's own file.
+Against `boar-research/data/experiments.json`:
+
+```python
+import json
+d = json.load(open("boar-research/data/experiments.json"))
+rows = d["experiments"] if isinstance(d, dict) else d
+by = {r["id"]: r for r in rows}
+for x in ("X-120", "X-143", "X-144"):
+    r = by[x]; print(x, r["judge"], "|", r["result"])
+```
+
+Three rows, one identical judged result `+0.017 (−0.000…+0.035)` — X-143 ran
+**0 judge calls**, X-120 a deterministic gate with `judge: "none"`. The full
+reproduction script (all eight findings): [AUDIT.md §5](AUDIT.md#5-reproduction).
+
 ---
 
 ## Headline findings
