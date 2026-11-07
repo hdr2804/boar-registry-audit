@@ -22,6 +22,26 @@ registry layer, not the final measurements. How to re-run every number:
 [Verification](#verification--re-run-every-headline-number-from-the-records-own-files)
 below.
 
+## The layer this audit checks — and what it doesn't
+
+Other entries in this bounty audit individual experiments and models. This one
+audits the record those experiments are counted from — the registry itself.
+That is a different layer, and the distinction is the whole point:
+
+- **The headline numbers are registry counts.** "387 experiments" and "215
+  without a gain" are not measurements; they are rows counted in
+  `data/experiments.json`. If the registry miscounts, every conclusion built
+  on those counts inherits the error — however carefully the individual
+  experiments were run.
+- **The experiments themselves hold up.** The DEVICE-FINAL numbers reproduce
+  exactly from the published judgment files (see the calibration above). This
+  audit does not attack the measurements; it attacks the bookkeeping around
+  them — provenance, census, and verification flags.
+- **The check is the file, not the claim.** Every finding below is reproducible
+  from the record's own files with the scripts in
+  [AUDIT.md §5](AUDIT.md#5-reproduction); nothing here rests on an
+  interpretation of what a result "should" mean.
+
 ## Check the headline finding in 60 seconds
 
 The sharpest check in this audit needs nothing beyond the record's own file.
