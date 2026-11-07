@@ -42,6 +42,18 @@ That is a different layer, and the distinction is the whole point:
   [AUDIT.md §5](AUDIT.md#5-reproduction); nothing here rests on an
   interpretation of what a result "should" mean.
 
+## Scope — what was checked, and what was not
+
+An audit is only as honest as its boundary. This one draws it plainly
+([AUDIT.md §0](AUDIT.md#0-what-this-audit-is--and-is-not)):
+
+- **Checked:** the registry itself — the provenance of every judged result,
+  the census counts, the verification flags — plus an independent recomputation
+  of the DEVICE-FINAL totals from the published HF judgment files.
+- **Not this audit's subject:** the final measurements, which reproduce exactly
+  (see the calibration above); and the LabRat app code, the grader, the scorer
+  and the retrieval analysis, which other claims in this bounty already audit.
+
 ## Check the headline finding in 60 seconds
 
 The sharpest check in this audit needs nothing beyond the record's own file.
