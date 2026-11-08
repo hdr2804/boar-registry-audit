@@ -54,6 +54,23 @@ An audit is only as honest as its boundary. This one draws it plainly
   (see the calibration above); and the LabRat app code, the grader, the scorer
   and the retrieval analysis, which other claims in this bounty already audit.
 
+## What this audit does not claim
+
+Three limits, stated in the audit itself
+([AUDIT.md §6](AUDIT.md#6-what-i-am-not-claiming)) — because an audit that
+overclaims is worse than one that underclaims:
+
+- **Not that the DEVICE-FINAL measurements are fabricated or miscomputed** —
+  they reproduce exactly, and further headline numbers (health gate, pack and
+  delivery rates) also check out.
+- **Not that copying a result string was bad faith** — staged arms and addenda
+  legitimately share numbers elsewhere in the registry. The finding is narrower:
+  X-120 and X-143 present, as their own `result`, a judged CI that their own
+  rows say they never produced, with no marker distinguishing that from a real
+  measurement.
+- **Not that THINK4B works** — only that the record has not shown it doesn't,
+  by its own standard, and that the settling run is prepared and cheap.
+
 ## Check the headline finding in 60 seconds
 
 The sharpest check in this audit needs nothing beyond the record's own file.
