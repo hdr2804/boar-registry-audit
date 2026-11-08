@@ -41,6 +41,13 @@ That is a different layer, and the distinction is the whole point:
   from the record's own files with the scripts in
   [AUDIT.md §5](AUDIT.md#5-reproduction); nothing here rests on an
   interpretation of what a result "should" mean.
+- **Retrieval is a separate question, and it is not this audit's claim.** Whether
+  retrieval is the binding constraint is answered by other claims in this bounty —
+  claim 9503 bounds it from the same traces (even perfect retrieval leaves U at
+  0.22/0.30 against the 0.50 bar), and it independently reproduces the same
+  DEVICE-FINAL totals this audit calibrates on (U 0.165/0.242). The registry
+  findings below stand either way: the counts are wrong whether or not retrieval
+  is the wall.
 
 ## Scope — what was checked, and what was not
 
