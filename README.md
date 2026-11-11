@@ -48,6 +48,13 @@ That is a different layer, and the distinction is the whole point:
   DEVICE-FINAL totals this audit calibrates on (U 0.165/0.242). The registry
   findings below stand either way: the counts are wrong whether or not retrieval
   is the wall.
+- **Judge-rule compliance is a separate question, and it is not this audit's
+  claim.** Whether judges follow their own scoring rules is answered by other
+  claims in this bounty — claim 9556 reports that the judge v1.1b true-zero rule
+  was not followed on the 5 refused items, with zero measured impact on the
+  U-total, and it independently reproduces the same DEVICE-FINAL totals this
+  audit calibrates on (U 0.165/0.242). The registry findings below stand either
+  way: the counts are wrong whether or not the judges followed their own rule.
 
 ## Scope — what was checked, and what was not
 
