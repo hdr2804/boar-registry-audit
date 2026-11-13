@@ -33,8 +33,11 @@ itself** — `data/experiments.json` and the counts, verdicts and provenance the
 public record stands on. The timing scorer is a separate layer again, audited on its
 own by claim 9575: its report that the hidden-thinking instrument reads 0 on all 2,086
 llama-server traces with recorded reasoning is that claim's finding, not this audit's,
-and nothing below depends on it. Three findings, all reproduced from the published
-files with the scripts in §5:
+and nothing below depends on it. Follow-up retrieval is likewise a separate layer,
+audited on its own by claim 9576: its report that, on the final build's own headline
+traces, 5 of 12 non-health follow-up turns retrieved no on-topic passage on either path
+is that claim's finding, not this audit's, and nothing below depends on it either.
+Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
    different experiments — including one that ran 0 judge calls.
