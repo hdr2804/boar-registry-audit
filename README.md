@@ -55,6 +55,16 @@ That is a different layer, and the distinction is the whole point:
   U-total, and it independently reproduces the same DEVICE-FINAL totals this
   audit calibrates on (U 0.165/0.242). The registry findings below stand either
   way: the counts are wrong whether or not the judges followed their own rule.
+- **The timing scorer is a separate question, and it is not this audit's
+  claim.** Whether the bench's hidden-thinking instrument can see silent thinking
+  on the llama-server backend is answered by another claim in this bounty —
+  claim 9575 reports that the scorer reads 0 on all 2,086 llama-server traces
+  with recorded reasoning (2,002 above the 10 s gate threshold), against a control
+  in which the node backend detected 100 of 100, and it states plainly that
+  quality scores and the article's ratios are not affected — including the
+  hand-reported THINK4B thinking cost (THINK4B.md, "ttft 19.9 s"), which it says
+  stands. The registry findings below stand either way: the counts are wrong
+  whether or not the timing instruments are blind.
 
 ## Scope — what was checked, and what was not
 
