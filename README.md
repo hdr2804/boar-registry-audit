@@ -65,6 +65,14 @@ That is a different layer, and the distinction is the whole point:
   hand-reported THINK4B thinking cost (THINK4B.md, "ttft 19.9 s"), which it says
   stands. The registry findings below stand either way: the counts are wrong
   whether or not the timing instruments are blind.
+- **Follow-up retrieval is a separate question, and it is not this audit's
+  claim.** Whether the shipped FollowUp rule resolves anaphoric follow-up turns
+  is answered by another claim in this bounty — claim 9576 reports that on the
+  final build's own headline traces, 5 of 12 non-health follow-up turns
+  retrieved no on-topic passage on either path, and one wrong answer carries a
+  citation to an unrelated passage; it states plainly that the U-total and
+  phone/desktop parity are not affected. The registry findings below stand
+  either way: the counts are wrong whether or not follow-up retrieval works.
 
 ## Scope — what was checked, and what was not
 
