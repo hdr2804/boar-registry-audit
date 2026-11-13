@@ -30,8 +30,11 @@ Material: `github.com/r4topunk/boar-research`, `github.com/r4topunk/boar-bench`,
 Fourteen claims already audit the LabRat app code, the grader, the scorer and the
 retrieval analysis. This audit examines a different layer: **the experiment registry
 itself** — `data/experiments.json` and the counts, verdicts and provenance the whole
-public record stands on. Three findings, all reproduced from the published files with
-the scripts in §5:
+public record stands on. The timing scorer is a separate layer again, audited on its
+own by claim 9575: its report that the hidden-thinking instrument reads 0 on all 2,086
+llama-server traces with recorded reasoning is that claim's finding, not this audit's,
+and nothing below depends on it. Three findings, all reproduced from the published
+files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
    different experiments — including one that ran 0 judge calls.
