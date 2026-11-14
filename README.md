@@ -73,6 +73,22 @@ That is a different layer, and the distinction is the whole point:
   citation to an unrelated passage; it states plainly that the U-total and
   phone/desktop parity are not affected. The registry findings below stand
   either way: the counts are wrong whether or not follow-up retrieval works.
+- **What the public summary reports is a separate question, and it is not this
+  audit's claim.** Which aggregates reach the public summary — and how the
+  headline U-total is weighted — is answered by another claim in this bounty —
+  claim 9591 reports that DEVICE-FINAL.md publishes correct-any only (M4
+  UXMATRIX 0.350) while its own table also carries wrong-any 0.617 (37 of the
+  58 answers given wrong), that the headline U-total halves the two
+  health-item weights (m1.json: 0.16683 published vs 0.16102 all-weights-1),
+  and that m1_agg.py's "correct" is a correctness-only threshold, so a
+  grounded answer that understates an emergency still scores as a success; it
+  states plainly that the headline is not wrong and that this does not move
+  the verdict. The registry findings below stand either way: the counts are
+  wrong whether or not the published summary hides the wrong-answer rate.
+  Claim 9591 also independently reconciles the same census arithmetic this
+  audit recounts in §2.2 (closed 187 + not-detected 28 = 215) and reproduces
+  the same DEVICE-FINAL totals this audit calibrates on (U 0.165/0.242,
+  0 of 71).
 
 ## Scope — what was checked, and what was not
 
