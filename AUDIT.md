@@ -37,6 +37,11 @@ and nothing below depends on it. Follow-up retrieval is likewise a separate laye
 audited on its own by claim 9576: its report that, on the final build's own headline
 traces, 5 of 12 non-health follow-up turns retrieved no on-topic passage on either path
 is that claim's finding, not this audit's, and nothing below depends on it either.
+The published-summary reporting choices are likewise a separate layer, audited on
+their own by claim 9591: its report that DEVICE-FINAL.md publishes correct-any only
+while its own table also carries wrong-any 0.617 on UXMATRIX, and that the headline
+U-total halves the two health-item weights, is that claim's finding, not this audit's,
+and nothing below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
