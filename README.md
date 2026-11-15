@@ -89,6 +89,20 @@ That is a different layer, and the distinction is the whole point:
   audit recounts in §2.2 (closed 187 + not-detected 28 = 215) and reproduces
   the same DEVICE-FINAL totals this audit calibrates on (U 0.165/0.242,
   0 of 71).
+- **Emergency-number routing is a separate question, and it is not this
+  audit's claim.** Whether the app attaches the right country's emergency
+  numbers is answered by another claim in this bounty — claim 9614 reports
+  that EmergencyNumbers.kt walks a fixed country table and returns the first
+  regex hit, so "What are the emergency numbers in Japan and China?" and the
+  reversed sentence both return Japan only (110 / 119), a snake-bite question
+  asking for Japan's number after a flight from Thailand returns Thailand's
+  numbers (191 / 1669), and "the US" matches nothing while "the U.S."
+  returns 911; several of these answers are already pinned in the project's
+  own golden file routing-leaves.json. It states plainly that this is a new
+  finding, not a rediscovery of the already-claimed HealthGate pack-id,
+  provenance, or temperature issues. The registry findings below stand either
+  way: the counts are wrong whether or not emergency-number routing picks the
+  right country.
 
 ## Scope — what was checked, and what was not
 
