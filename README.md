@@ -103,6 +103,21 @@ That is a different layer, and the distinction is the whole point:
   provenance, or temperature issues. The registry findings below stand either
   way: the counts are wrong whether or not emergency-number routing picks the
   right country.
+- **Ruler precision is a separate question, and it is not this audit's
+  claim.** Whether the headline confidence intervals are honestly stated is answered by another claim in this bounty —
+  claim 9662 reports that the U-total and phone-vs-desktop CIs bootstrap over judge pair rows (both A/B orderings of the same item) instead of item
+  clusters, so the quoted 95% CIs are too narrow, while the repo already ships an item/run-level bootstrap (scorers/stats.py two_level_ratio /
+  two_level_diff) that the final ruler path does not use; it also reports that the items, reference answers and judges all come from the same two model
+  families, and that 19 of 75 items are time-sensitive yet pooled into one aggregate U-total. It states plainly that the point estimates and the
+  below-0.50 conclusion survive — only the precision is overstated. The registry findings below stand either way: the counts are wrong whether or not
+  the ruler's CIs are item-clustered.
+- **The answer style is a separate question, and it is not this audit's
+  claim.** Whether the app's own brevity instruction caps completeness is answered by another claim in this bounty —
+  claim 9668 reports that LabRat's "Succinct" style ("Answer in 2-3 short, direct sentences", plus the appended reminder "Keep it short: 2-3
+  sentences") is a second, unmeasured ceiling on the ruler's completeness dimension, and that deleting the instruction and nothing else raised
+  hand-scored checklist coverage from 4.0/37 (11%) to 14.0/37 (38%) on 8 items where the phone already scored correctness ≥4; it states plainly that
+  this is an independent ceiling on top of the retrieval ceiling, not the only one, and that the no-style answers still reach only 38% against the
+  reference's ~100%. The registry findings below stand either way: the counts are wrong whether or not the brevity instruction caps completeness.
 
 ## Scope — what was checked, and what was not
 
