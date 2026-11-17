@@ -42,6 +42,21 @@ their own by claim 9591: its report that DEVICE-FINAL.md publishes correct-any o
 while its own table also carries wrong-any 0.617 on UXMATRIX, and that the headline
 U-total halves the two health-item weights, is that claim's finding, not this audit's,
 and nothing below depends on it either.
+Emergency-number routing is likewise a separate layer, audited on its own by
+claim 9614: its report that EmergencyNumbers.kt walks a fixed country table and
+returns the first regex hit, so a question naming Japan and China returns Japan
+only and 'the US' matches nothing while 'the U.S.' returns 911, is that claim's
+finding, not this audit's, and nothing below depends on it either.
+Ruler precision is likewise a separate layer, audited on its own by claim 9662:
+its report that the headline CIs bootstrap over judge pair rows instead of item
+clusters, while the repo already ships an item/run-level bootstrap the final
+ruler path does not use, is that claim's finding, not this audit's, and nothing
+below depends on it either.
+The answer style is likewise a separate layer, audited on its own by claim 9668:
+its report that LabRat's 'Succinct' instruction is a second, unmeasured ceiling
+on completeness, raising hand-scored checklist coverage from 4.0/37 to 14.0/37
+on 8 items when the instruction is deleted, is that claim's finding, not this
+audit's, and nothing below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
