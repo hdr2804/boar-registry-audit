@@ -118,6 +118,30 @@ That is a different layer, and the distinction is the whole point:
   hand-scored checklist coverage from 4.0/37 (11%) to 14.0/37 (38%) on 8 items where the phone already scored correctness ≥4; it states plainly that
   this is an independent ceiling on top of the retrieval ceiling, not the only one, and that the no-style answers still reach only 38% against the
   reference's ~100%. The registry findings below stand either way: the counts are wrong whether or not the brevity instruction caps completeness.
+- **Whether the headline U counts the V-exact anchors is a separate question, and it is not this audit's
+  claim.** Whether the public scorer's U-total includes the four V-exact anchors is answered by another claim in this bounty —
+  claim 9711 reports that `scorers/bench.py` `items_for()` returns all 75 items and `scorers/score.py` `quality_block()` computes the floor-adjusted U
+  over every pair with `len(ids)` as `n_questions`, neither filtering `tags.anchor_vexact`, while `bench/v0.4/DATASET_CARD.md` says Headline U = 71 items
+  with the four anchors excluded because systems may have been shaped on them; re-running the published DEVICE-FINAL judgments through the 75-item path
+  gives s42 Opus 0.1742 vs published 0.173, s43 Opus 0.1709 vs 0.170, s42 Codex 0.2415 vs 0.244 and s43 Codex 0.2366 vs 0.244 (largest gap 0.0070), and a
+  synthetic near-bar run crosses the 0.50 bar only when the anchors are counted (U 0.5233, MEETS, vs 0.4965, INCONCLUSIVE, without them). It states plainly
+  that the gap on the real runs is small and the bar flip is shown on the synthetic run, not on the published runs. The registry findings below stand either
+  way: the counts are wrong whether or not the public scorer counts the anchors.
+- **Whether the public device converter runs is a separate question, and it is not this audit's
+  claim.** Whether the documented device-conversion workflow works from the public tree is answered by another claim in this bounty —
+  claim 9712 reports that `scorers/convert_device.py` fails before reading any input, even on `--help`, with `ModuleNotFoundError: No module named
+  'scorers.convert_legacy'`, because the helper it imports and the 10 converter tests advertised in `devices/DEVICE-KIT.md` are absent from the public tree,
+  while both published Python test stages still pass (40 and 8 tests, each with 2 skips) and a working `score.py --help` is the same-environment control. It
+  states plainly that this blocks the documented historical device-conversion workflow and does not show that the final phone scores are wrong. The registry
+  findings below stand either way: the counts are wrong whether or not the device converter runs.
+- **Where the U-total floor sits is a separate question, and it is not this audit's
+  claim.** Whether a fluent wrong answer can outscore the published result is answered by another claim in this bounty —
+  claim 9713 reports that the rubric caps correctness at 2 for any wrong claim that matters (`judge-core.mjs:41`) while every axis has minimum 1, and the
+  headline subtracts 1 (`m1_agg.py:30-33`: u = ma - 1, r = mr - 1, U = sum(W*u)/sum(W*r)), so a system wrong on every item scores U 0.333 at mr 4.0 down to
+  0.256 at mr 4.9 — above the published headline 0.165/0.242 and above an honest refusal (u = 0) — and that the CE column is blind to it (x = ca <= 1.5, while
+  an ordinary wrong claim lands on ca = 2.0) and a wrong answer with correctness pinned at 2 can clear the 0.50 bar ((2,3,3) passes at mr <= 4.2; (2,3,4) at
+  every mr). It states plainly that the exact v0.4 mr is not claimed — the tables use mr 4.0-4.9 — and that the formula, rubric text and thresholds are exact
+  quotes. The registry findings below stand either way: the counts are wrong whether or not the ruler's floor sits one point too low.
 
 ## Scope — what was checked, and what was not
 
