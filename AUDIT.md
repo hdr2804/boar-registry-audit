@@ -57,6 +57,25 @@ its report that LabRat's 'Succinct' instruction is a second, unmeasured ceiling
 on completeness, raising hand-scored checklist coverage from 4.0/37 to 14.0/37
 on 8 items when the instruction is deleted, is that claim's finding, not this
 audit's, and nothing below depends on it either.
+Whether the headline U counts the V-exact anchors is likewise a separate layer,
+audited on its own by claim 9711: its report that the public scorer computes the
+U-total over all 75 items without filtering the four V-exact anchors the dataset
+card excludes from the 71-item headline, with the largest gap on the real runs
+0.0070 and a synthetic near-bar run crossing the 0.50 bar only when the anchors
+are counted, is that claim's finding, not this audit's, and nothing below
+depends on it either.
+Whether the public device converter runs is likewise a separate layer, audited
+on its own by claim 9712: its report that convert_device.py fails before reading
+any input with a missing convert_legacy module, while the converter tests
+advertised in DEVICE-KIT.md are absent from the public tree and both published
+Python test stages still pass, is that claim's finding, not this audit's, and
+nothing below depends on it either.
+Where the U-total floor sits is likewise a separate layer, audited on its own
+by claim 9713: its report that the rubric caps correctness at 2 while every axis
+has minimum 1, so a system wrong on every item scores 0.26–0.33, above the
+published headline and above an honest refusal, and a wrong answer can clear the
+0.50 bar, is that claim's finding, not this audit's, and nothing below depends
+on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
