@@ -142,6 +142,15 @@ That is a different layer, and the distinction is the whole point:
   an ordinary wrong claim lands on ca = 2.0) and a wrong answer with correctness pinned at 2 can clear the 0.50 bar ((2,3,3) passes at mr <= 4.2; (2,3,4) at
   every mr). It states plainly that the exact v0.4 mr is not claimed — the tables use mr 4.0-4.9 — and that the formula, rubric text and thresholds are exact
   quotes. The registry findings below stand either way: the counts are wrong whether or not the ruler's floor sits one point too low.
+- **Whether the deep tier's phone path was blocked by a missing Android build is a separate question, and it is not this audit's
+  claim.** Whether the decision that closed the deep tier's phone path stated its reason correctly is answered by another claim in this bounty —
+  claim 9745 reports that `decisions.json` D-147 (2026-10-21) cites "no Android expert-streaming build" for not shipping the 35B deep tier (floor-adjusted
+  0.436, the closest of any config to the 0.50 bar), while the record's own `facts.json` F-2118 (2026-10-19, CONFIRMED) says the expert-streaming engine was
+  cross-built for Android, and `status.json` OF-2 — in the same file as D-147 — says the same, noting phone speed and memory were never measured; the supporting
+  record (`LESANDROID.md`) reads "BUILD-OK" and the ready 15-30 minute `adb` runbook was never run. It states plainly that this does not show the deep tier would
+  have crossed the 0.50 bar on a phone (its desktop best was still 0.064 short) and that the missing `llama-server` in the fork is real integration work — only
+  that the decision's own stated reason is contradicted by the record's own fact log two days earlier. The registry findings below stand either way: the counts
+  are wrong whether or not the deep tier's phone path was blocked by a missing build.
 
 ## Scope — what was checked, and what was not
 
