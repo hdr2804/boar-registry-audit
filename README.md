@@ -151,6 +151,16 @@ That is a different layer, and the distinction is the whole point:
   have crossed the 0.50 bar on a phone (its desktop best was still 0.064 short) and that the missing `llama-server` in the fork is real integration work — only
   that the decision's own stated reason is contradicted by the record's own fact log two days earlier. The registry findings below stand either way: the counts
   are wrong whether or not the deep tier's phone path was blocked by a missing build.
+- **Whether the published scorer implements the ruler's true-zero and health weighting is a separate question, and it is not this audit's
+  claim.** Whether the shipped scorer reproduces the ruler's headline number is answered by another claim in this bounty —
+  claim 9757 reports that `boar-bench/scorers/score.py` `floor_ratio()` computes an unweighted ratio over all judged pairs and says "No decline zeroing here"
+  in its own docstring, while the value it emits is labelled `bounty_bar.metric = "floor_adjusted_u"`; the ruler (RULER-SPEC-v1 §3.1/§3.4) sets a declined answer
+  to u=0 and weights the 11 health items at 0.5, and the scorer does neither even though it already reads `answer.declined`. Re-running the record's own public
+  DEVICE-FINAL judgments through the shipped scorer gives Claude 0.1731 (seed 42) / 0.1702 (seed 43) instead of the published 0.1668 / 0.1623; the gap is exactly
+  the five trace-declined health items (cw-021, cw-022, cw-025, cx-021, cx-023), so the shipped scorer cannot reproduce the claim number and flatters refusal-prone
+  systems by ~+0.012 on weight-1 U per five Opus-scored health refusals. It states plainly that the headline conclusion (0.165 < 0.50) is unchanged — this is a
+  reproducibility/correctness defect in the public scorer. The registry findings below stand either way: the counts are wrong whether or not the shipped scorer
+  implements the ruler's true-zero.
 
 ## Scope — what was checked, and what was not
 
