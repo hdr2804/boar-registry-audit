@@ -76,6 +76,20 @@ has minimum 1, so a system wrong on every item scores 0.26–0.33, above the
 published headline and above an honest refusal, and a wrong answer can clear the
 0.50 bar, is that claim's finding, not this audit's, and nothing below depends
 on it either.
+Whether the deep tier's phone path was blocked by a missing Android build is
+likewise a separate layer, audited on its own by claim 9745: its report that
+decisions.json D-147 cites "no Android expert-streaming build" for not shipping
+the 35B deep tier, while the record's own facts.json F-2118 and status.json
+OF-2 say the build was cross-built for Android two days earlier and the ready
+15-30 minute runbook was never run, is that claim's finding, not this audit's,
+and nothing below depends on it either.
+Whether the published scorer implements the ruler's true-zero and health
+weighting is likewise a separate layer, audited on its own by claim 9757: its
+report that the shipped scorer's floor_ratio() computes an unweighted ratio
+with no decline zeroing while labelling the result floor_adjusted_u, even
+though the ruler sets a declined answer to u=0 and weights the 11 health items
+at 0.5, is that claim's finding, not this audit's, and nothing below depends on
+it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
