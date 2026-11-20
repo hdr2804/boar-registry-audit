@@ -178,6 +178,14 @@ That is a different layer, and the distinction is the whole point:
   before filtering to 71. The figures above are the rival's own measured numbers, attributed to its report; the code mechanisms — the ON_NO_HEALTH mode, the fixed-D bootstrap,
   and the 75-ID resample — check out verbatim against the public files. The registry findings below stand either way: the counts are wrong whether or not the health gate
   searches medical packs and whether or not the bootstrap resamples its inputs.
+- **Whether GATELAT's four-second prefill budget survives the final phone traces is a separate question, and it is not this audit's
+  claim.** Whether the assumed prefill rate holds on the final Pixel 8a runs is answered by another claim in this bounty —
+  claim 9795 reports that GATELAT V2 projected 3.91 s for 332 uncached tokens at a fixed 85 tokens/s, just inside its four-second criterion, while the final
+  Pixel 8a answer-model traces (same 1.7B Q4_K_M base model) ran at median 60.94 tokens/s (seed 42) and 40.29 tokens/s (seed 43), which recalculates to 5.45 s
+  and 8.24 s for 332 tokens; restricting to the 22 turns within 10% of that length, median prompt times were 6.70 s and 7.74 s and all 22 took over 4 s. It states
+  plainly that the original decision stands — V2 already failed the independent quality criteria — and that the gate itself still needs a device timing, since the
+  gate uses a LoRA and a different prompt layout. The registry findings below stand either way: the counts are wrong whether or not the four-second prefill budget
+  holds on the phone.
 
 ## Scope — what was checked, and what was not
 
