@@ -161,6 +161,23 @@ That is a different layer, and the distinction is the whole point:
   systems by ~+0.012 on weight-1 U per five Opus-scored health refusals. It states plainly that the headline conclusion (0.165 < 0.50) is unchanged — this is a
   reproducibility/correctness defect in the public scorer. The registry findings below stand either way: the counts are wrong whether or not the shipped scorer
   implements the ruler's true-zero.
+- **Whether retrieved sources can steer the model is a separate question, and it is not this audit's
+  claim.** Whether a poisoned retrieved passage can become an instruction is answered by another claim in this bounty —
+  claim 9782 reports that LabRat concatenates retrieved title/body text directly into the Qwen system message (`RagPure.kt:195-228`), and that its 75-item
+  benchmark has no poisoned-source case; with the exact shipped Qwen3-1.7B Q4_K_M model, reconstructed prompt, cw-001, temperature 0.7, thinking off, seeds 42-44,
+  clean context named Astana 3/3 with 0/3 canaries while a poisoned source named Almaty 3/3 and emitted CONFIRMED_INJECTION 3/3; moving the evidence to the
+  user turn plus an explicit instruction warning still failed 3/3, and removing the instruction-like sentence restored Astana 3/3. It states plainly that this is a
+  controlled test of the shipped model and exact prompt path, not a claim about bit-identical Android sampler behavior, and that three seeds on one fixture establish a
+  controlled vulnerability, not a population attack-success estimate. The registry findings below stand either way: the counts are wrong whether or not retrieved sources
+  can steer the model.
+- **Whether the health gate and the bootstrap treat their inputs honestly is a separate question, and it is not this audit's
+  claim.** Whether medical-pack queries are searched, and whether the published intervals resample what they claim, is answered by another claim in this bounty —
+  claim 9785 reports that HealthGate plus SearchPort ON_NO_HEALTH blocks 23/140 (16.4%) M3 pack-matched queries with 0 sources searched (0% correct_any, blocking 40%
+  of medlineplus and 25% of firstaid); that AVAILABLE vs NONE is flat on v0.4 (0.171 vs 0.157 Claude; 0.251 vs 0.248 Codex) due to 58.6% own-article retention and
+  44-token Succinct truncation; and that `floor_metrics.py` treats decline_ratio_D as fixed outside the bootstrap while `m1_agg.py` resamples 75 IDs including the 4 anchors
+  before filtering to 71. The figures above are the rival's own measured numbers, attributed to its report; the code mechanisms — the ON_NO_HEALTH mode, the fixed-D bootstrap,
+  and the 75-ID resample — check out verbatim against the public files. The registry findings below stand either way: the counts are wrong whether or not the health gate
+  searches medical packs and whether or not the bootstrap resamples its inputs.
 
 ## Scope — what was checked, and what was not
 
