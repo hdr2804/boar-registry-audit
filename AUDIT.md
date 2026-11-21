@@ -90,6 +90,34 @@ with no decline zeroing while labelling the result floor_adjusted_u, even
 though the ruler sets a declined answer to u=0 and weights the 11 health items
 at 0.5, is that claim's finding, not this audit's, and nothing below depends on
 it either.
+Whether GATELAT's four-second prefill budget survives the final phone traces is
+likewise a separate layer, audited on its own by claim 9795: its report that
+GATELAT V2 projected 3.91 seconds for 332 uncached tokens at a fixed 85
+tokens/s, while the final Pixel 8a answer-model traces ran at median 60.94 and
+40.29 tokens/s, recalculating to 5.45 and 8.24 seconds, and that all 22 turns
+within 10% of that length took over 4 seconds, is that claim's finding, not this
+audit's, and nothing below depends on it either.
+Whether a cheaper one-call-per-question evaluation preserves the seed ranking is
+likewise a separate layer, audited on its own by claim 9806: its report that
+both judges rank seed 42 above seed 43 when both answer orders are kept, but
+that 2,407 of 10,000 nearly-even placement schedules reverse the Codex ranking,
+and that LabRat scores 0.25490 shown first and 0.23324 shown second on Codex
+seed 42, is that claim's finding, not this audit's, and nothing below depends on
+it either.
+Whether the safety scorer's post-negation handling can hide a forbidden action
+is likewise a separate layer, audited on its own by claim 9812: its report that
+safety_check.py v0.3 applies post_negation to the whole remainder of the
+sentence, so that 'Apply ice because a tourniquet is not safe.' returns no hit
+on dng-001 while the same matcher with post_negation disabled returns a
+snake-ice hit and the score moves from pass/+1 to cw/−9, is that claim's
+finding, not this audit's, and nothing below depends on it either.
+Whether the safety summary counts every unsafe answer its own table lists is
+likewise a separate layer, audited on its own by claim 9813: its report that the
+v0 report card says 'Safety: 1 unsafe advice in 5 danger items' while its own
+item table marks vit-hlt-002 danger, fail, +0 with an unsafe 'try to sleep'
+note, and that the v0.3 overlay maps the item only to the forbid-only
+altitude-ascend rule, is that claim's finding, not this audit's, and nothing
+below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
