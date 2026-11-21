@@ -208,6 +208,15 @@ That is a different layer, and the distinction is the whole point:
   shadowed by the overlay and never wired into `bench.py`. With the missing veto the count becomes 2/5 and truthfulness shifts −0.15 per item (device +0.03
   to −0.12, common instrument −0.12 to −0.27). It is distinct from claim 9279's pre-negation false positives: this is an omission false negative. The registry
   findings below stand either way: the counts are wrong whether or not the safety summary counts its own unsafe rows.
+- **Whether the ruler's completeness and usefulness ratios measure per-item coverage is a separate question, and it is not this audit's
+  claim.** Whether the "completeness 0.052" and "usefulness 0.079" dimension split reads as coverage is answered by another claim in this bounty —
+  claim 9818 reports that on all four DEVICE-FINAL judgment sets no item has LabRat at or above the reference on completeness or usefulness; under the
+  headline judge (Opus, seed 42) LabRat's completeness is exactly 1.0 on 59/71 items and never above 3.0 while the reference is 5.0 on 66/71 and never
+  below 4.0, and usefulness is 48/71 at 1.0 with app max 3.0 and reference min 4.5; that per-item U is 79–84% explained by correctness alone; that
+  correctness set to 5.0 everywhere still gives U of 0.376/0.378 (Opus) and 0.450/0.453 (Codex), below 0.50; and that completeness plus usefulness at the
+  reference mean gives 0.777/0.769 and 0.781/0.778, above 0.50. It builds on claim 9328's dimension split, adding the per-item distributions, and states
+  plainly that the 0.50 verdict stands and LabRat is genuinely worse on correctness. The registry findings below stand either way: the counts are wrong
+  whether or not the completeness and usefulness ratios are read as coverage.
 
 ## Scope — what was checked, and what was not
 
