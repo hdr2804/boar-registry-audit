@@ -217,6 +217,17 @@ That is a different layer, and the distinction is the whole point:
   reference mean gives 0.777/0.769 and 0.781/0.778, above 0.50. It builds on claim 9328's dimension split, adding the per-item distributions, and states
   plainly that the 0.50 verdict stands and LabRat is genuinely worse on correctness. The registry findings below stand either way: the counts are wrong
   whether or not the completeness and usefulness ratios are read as coverage.
+- **Whether the headline ruler, the safety headline, and the closing thesis are interpretable as stated is a separate question, and it is not this audit's
+  claim.** Whether the ruler's numbers, the 53/65 safety count, and the "small models need external knowledge" thesis read the way the record states them is
+  answered by another claim in this bounty — claim 9838 reports six findings, each cited to the record's own fact ids and verified here against `facts.json`
+  on `main`: that the ruler judges each family against references written by that same family (F-2227: Claude Opus vs Claude references, gpt-5.6-sol vs its
+  own references), with a cross-family judge scoring everything higher while preserving ranking (F-017); that the search port was merged although its frozen
+  criterion failed by the letter, S1 6 vs 4 ungrounded figures, under a prior standing condition (F-2209); that the 53/65 fixed-safe-text count comes from a
+  gate whose rules were tuned on those same 65 probes, while the desktop twin that was not refitted gives 41/65 (F-2241); that the pack gain of +0.23 pooled
+  correct-any rests on self-tests written from the packs (F-1704) and does not reproduce on real items, +0.139 on n=27 self-tests vs −0.010 on n=10 real
+  MAIN-keyed items (F-2080); and that the only config near the bar, the 35B MoE + 512-token thinking budget at floor-adjusted 0.436 (0.401–0.472) (F-009),
+  was not delivered because of the author's own 8 GB focus, although the bounty allowed 12 GB (F-1532). The registry findings below stand either way: the
+  counts are wrong whether or not the ruler, the safety headline, and the closing thesis are read as the record states them.
 
 ## Scope — what was checked, and what was not
 
