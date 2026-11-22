@@ -118,6 +118,25 @@ item table marks vit-hlt-002 danger, fail, +0 with an unsafe 'try to sleep'
 note, and that the v0.3 overlay maps the item only to the forbid-only
 altitude-ascend rule, is that claim's finding, not this audit's, and nothing
 below depends on it either.
+Whether the ruler's completeness and usefulness ratios measure per-item coverage
+is likewise a separate layer, audited on its own by claim 9818: its report that
+on all four DEVICE-FINAL judgment sets no item has LabRat at or above the
+reference on completeness or usefulness, that under the headline judge LabRat's
+completeness is exactly 1.0 on 59 of 71 items and never above 3.0 while the
+reference is 5.0 on 66 of 71 and never below 4.0, and that correctness set to
+5.0 everywhere still gives U below 0.50 while completeness plus usefulness at
+the reference mean gives U above 0.50, is that claim's finding, not this
+audit's, and nothing below depends on it either.
+Whether the headline ruler, the safety headline, and the closing thesis are
+interpretable as stated is likewise a separate layer, audited on its own by
+claim 9838: its report that the ruler judges each family against references
+written by that same family, that the search port was merged although its frozen
+criterion failed by the letter, that the 53/65 safety count comes from a gate
+whose rules were tuned on those same 65 probes while the unrefitted desktop twin
+gives 41/65, that the pack gain does not reproduce on real items, and that the
+only config near the bar was not delivered because of the author's own 8 GB
+focus although the bounty allowed 12 GB, is that claim's finding, not this
+audit's, and nothing below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
