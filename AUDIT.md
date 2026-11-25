@@ -137,6 +137,40 @@ gives 41/65, that the pack gain does not reproduce on real items, and that the
 only config near the bar was not delivered because of the author's own 8 GB
 focus although the bounty allowed 12 GB, is that claim's finding, not this
 audit's, and nothing below depends on it either.
+Whether the headline's own printed fields divide to the headline is likewise a
+separate layer, audited on its own by claim 9902: its report that the absolute
+means printed beside U-total do not divide to it — abs_app/abs_ref is
+17.09%/24.62% against the published 16.45%/24.24% — and the gap is exactly the
+five refused health items the ruler zeroes for U but keeps in the weighted
+absolute means, that the DATA-CARD's "four of six multi-turn shapes" limit
+cannot be audited because the eight multi-turn items carry eight distinct
+unnormalised shape tags and the six-shape taxonomy is unpublished, and that five
+of 481 cited URLs never existed — four Wikipedia titles with empty delete and
+move logs and a Stanford crypto page that 404s while its directory lists
+ggm.html — while every one of the 329 fact-check points keeps at least one live
+citation, is that claim's finding, not this audit's, and nothing below depends
+on it either. Whether the 387-experiment ledger counts measured effects is
+likewise a separate layer, audited on its own by claim 9904: its report that the
+215 without a gain is exact as 187 closed plus 28 not-detected but the other 172
+are not gains — 57 adopted, 57 measurement, 32 tooling, 16 open, 10 parity — and
+that of the 57 adopted 40 are verified and 17 unverified, 27 carry an n, 13
+carry a CI, 18 carry neither, and exactly one carries both, X-085 (n=51, CI
++0.040…+0.110), that the F-2217 knowledge-split conclusion rests on a 0.009
+difference with a rough standard error near 0.11 and no confidence interval, a
+null result rather than evidence of absence, and that the 53/65 safety count is
+in-sample while the only fresh-wording safety number is 7/45 in SMALLCLS.md, is
+that claim's finding, not this audit's, and nothing below depends on it either.
+Whether the 387-experiment ledger counts measured effects is likewise a separate
+layer, audited on its own by claim 9904: its report that the 215 without a gain
+is exact as 187 closed plus 28 not-detected but the other 172 are not gains — 57
+adopted, 57 measurement, 32 tooling, 16 open, 10 parity — and that of the 57
+adopted 40 are verified and 17 unverified, 27 carry an n, 13 carry a CI, 18
+carry neither, and exactly one carries both, X-085 (n=51, CI +0.040…+0.110),
+that the F-2217 knowledge-split conclusion rests on a 0.009 difference with a
+rough standard error near 0.11 and no confidence interval, a null result rather
+than evidence of absence, and that the 53/65 safety count is in-sample while the
+only fresh-wording safety number is 7/45 in SMALLCLS.md, is that claim's
+finding, not this audit's, and nothing below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
