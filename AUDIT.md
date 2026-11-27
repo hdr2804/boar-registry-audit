@@ -160,17 +160,42 @@ difference with a rough standard error near 0.11 and no confidence interval, a
 null result rather than evidence of absence, and that the 53/65 safety count is
 in-sample while the only fresh-wording safety number is 7/45 in SMALLCLS.md, is
 that claim's finding, not this audit's, and nothing below depends on it either.
-Whether the 387-experiment ledger counts measured effects is likewise a separate
-layer, audited on its own by claim 9904: its report that the 215 without a gain
-is exact as 187 closed plus 28 not-detected but the other 172 are not gains — 57
-adopted, 57 measurement, 32 tooling, 16 open, 10 parity — and that of the 57
-adopted 40 are verified and 17 unverified, 27 carry an n, 13 carry a CI, 18
-carry neither, and exactly one carries both, X-085 (n=51, CI +0.040…+0.110),
-that the F-2217 knowledge-split conclusion rests on a 0.009 difference with a
-rough standard error near 0.11 and no confidence interval, a null result rather
-than evidence of absence, and that the 53/65 safety count is in-sample while the
-only fresh-wording safety number is 7/45 in SMALLCLS.md, is that claim's
-finding, not this audit's, and nothing below depends on it either.
+Whether the new-cw gate caches Jev verdicts under the wrong identity is likewise
+a separate layer, audited on its own by claim 9986: its report that
+scorers/jev.py keys the verdict cache on item, answer, reference, rubric and
+prompt hashes with no retrieved_titles while the Jev request body carries
+retrieved_titles filled from answer.shown, and that harness/gate.py triggers
+new-cw on answer-text changes only, so an identical answer with different
+sources reuses a stale verdict and a source-only change gets zero Jev calls —
+the same poisoned source is flagged only after an unrelated answer-text edit —
+while the frozen Jev prompt never mentions retrieved_titles, so the effect on
+real Jev labels is inferred rather than measured and the headline is unchanged,
+is that claim's finding, not this audit's, and nothing below depends on it
+either.
+Whether the headline family gap survives a split by item-author family is
+likewise a separate layer, audited on its own by claim 9988: its report that,
+after reproducing every published value in aggregates/m1.json and rf.json
+exactly (84/84 numbers, zero difference), the DEVICE-FINAL pooled gap between
+the Codex and Opus judge families appears at nearly identical size inside both
+author strata — +0.075 on Claude-written items and +0.081 on Codex-written
+items, with paired bootstrap 95% confidence intervals excluding zero in both —
+while same-family U 0.201 is not elevated over cross-family U 0.205, and that a
+Shapley decomposition attributes 92.4% of the gap to the Codex judge grading the
+identical app answers higher and 7.6% to the smaller Codex-reference
+denominator, with both judges scoring the app higher on Claude-written items, an
+author-mix sensitivity of roughly +/-0.04 the record never reported, is that
+claim's finding, not this audit's, and nothing below depends on it either.
+Whether the published U-total can be recomputed from the published ruler is
+likewise a separate layer, audited on its own by claim 9992: its report that the
+record states the headline U weights the 11 health_safety items at 0.5 and
+publishes the weight-1 U beside it, while the pinned dataset carries no weight
+field on any item, no weighting exists in the public scoring path, and the
+report prints a single floor-adjusted U labelled the bar metric with no weight-1
+row, so 0.165/0.242 cannot be recomputed or identified as weighted or weight-1 —
+a synthetic pair set gives 0.583333 unweighted against 0.523810 weighted, a
+delta of -0.059524 — while the judged pairs are unpublished so the number is not
+claimed wrong, and both published values sit far below the 0.50 bar, is that
+claim's finding, not this audit's, and nothing below depends on it either.
 Three findings, all reproduced from the published files with the scripts in §5:
 
 1. **A provenance error:** one judged measurement is registered as the result of three
